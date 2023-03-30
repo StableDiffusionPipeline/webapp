@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenJourney | DFC</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/jquery-3.6.4.min.js"></script>
+
+    <meta property="og:title" content="OpenJourney"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Made by DFC"/>
+    <meta property="og:image" content="/icon.png"/>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div id="gallery"></div>
+    <div class="navbar">
+        <div class="logo">OpenJourney</div>
+        <button onclick="location.href='./gallery'">Gallery</button>
+        <button onclick="location.href='./gallery-my'">My gallery</button>
+        <div class="bottom">
+            <p>Logged in</p>
+        </div>
+    </div>
+    <script src="./js/gallery.js"></script>
+    <script>
+        window.localStorage.user_id = "{{ user_id }}";
+    </script>
+</body>
+</html>
